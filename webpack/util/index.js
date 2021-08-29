@@ -4,5 +4,6 @@ const cwd = process.cwd();
 const distPath = path.resolve(cwd, 'lib');
 
 module.exports = {
+    cwd,
     distPath,
 };

@@ -2,4 +2,6 @@ const webpack = require('webpack');
 
 const webpackConfig = require('../webpack/webpack.dev');
 
-webpack(webpackConfig);
+const compiler = webpack(webpackConfig);
+
+compiler.run();

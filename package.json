@@ -4,7 +4,8 @@
   "description": "webpack + react 的脚手架",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development node ./script/dev.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/DAQIXIAOQI/webpack-react/issues"
   },
-  "homepage": "https://github.com/DAQIXIAOQI/webpack-react#readme"
+  "homepage": "https://github.com/DAQIXIAOQI/webpack-react#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "webpack": "^5.51.1",
+    "webpack-merge": "^5.8.0"
+  }
 }

@@ -1,2 +1,2 @@
 # webpack-react
-webpack + react 的脚手架
+webpack + react + ts 的脚手架

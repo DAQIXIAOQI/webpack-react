@@ -1,8 +1,9 @@
 const path = require('path');
 const chalk = require('chalk');
 const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const { distPath, cwd } = require('./util');
+const { resolve, distPath, cwd } = require('./util');
 
 module.exports = {
     target: 'web',
@@ -13,7 +14,7 @@ module.exports = {
         path: distPath,
         assetModuleFilename: 'static/asset/[name].[contenthash:8][ext]',
         environment: {
-            arrowFunction: false,
+            // arrowFunction: false,
             const: false,
         },
     },
@@ -41,10 +42,8 @@ module.exports = {
             },
         ],
     },
-    resolve: {
-
-    },
+    resolve,
     plugins: [
-
+        new CleanWebpackPlugin(),
     ],
 };

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib",
+        "baseUrl": "./src",
+        "sourceMap": true,
+        "target": "ES6",
+        "noImplicitAny": false,
+        "module": "ESNext",
+        "allowJs": true,
+        "jsx": "react",
+        "jsxFactory": "h",
+        "lib": ["ES6", "ES7", "DOM"],
+        "moduleResolution": "node"
+    }
+}
